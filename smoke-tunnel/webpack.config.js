@@ -17,7 +17,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: './src/index.pug',
+      favicon: './src/assets/icons/favicon.png'
     }),
     new MiniCssExtractPlugin({
       filename: 'style.[contenthash].css'
@@ -41,6 +42,14 @@ module.exports = {
           ,
           'sass-loader',
         ]
+      },
+      {
+        test: /\.pug$/,
+        use: [
+          {
+            loader: "pug-loader",
+          },
+        ],
       },
       {
         test: /\.woff2?$/i,
@@ -76,16 +85,16 @@ module.exports = {
         }],
         type: 'asset/resource',
       },
-      {
-        test: /\.m?js$/,
-        exclude: /(node_modules|bower_components)/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env']
-          }
-        }
-      }
+      // {
+      //   test: /\.m?js$/,
+      //   exclude: /(node_modules|bower_components)/,
+      //   use: {
+      //     loader: 'babel-loader',
+      //     options: {
+      //       presets: ['@babel/preset-env']
+      //     }
+      //   }
+      // }
     ]
   }
 }
