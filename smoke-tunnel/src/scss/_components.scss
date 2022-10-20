@@ -1,10 +1,12 @@
+.wrapper {
+    max-width: 1218px;
+    margin: 0 auto;
+}
+
 .socials {
     display: flex;
     gap: 16px;
-}
-
-.socials_header {
-
+    width: fit-content;
 }
 
 .socials__icon {
@@ -15,6 +17,10 @@
     &:hover {
         filter: brightness(70%);
     }
+}
+
+.socials_footer {
+    gap: 36px;
 }
 
 .socials__icon_vk {
@@ -28,4 +34,25 @@
 }
 .socials__icon_wots {
     background-image: url('../assets/icons/whatsapp.svg');
+}
+
+.input-text {
+    padding: 17px;
+    border: 1px solid $color-e5;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+    &::placeholder {
+        color: #b1b1b1;
+    }
+}
+
+.form-button {
+    font-weight: bold;
+    padding: 17px;
+    background-color: #215359;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    cursor: pointer;
 }

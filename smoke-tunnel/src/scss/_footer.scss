@@ -1,0 +1,57 @@
+.footer {
+    background-color: #0C2F33;
+    padding: 88px 0 92px;
+    color: white;
+}
+
+.wrapper-footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer__grid {
+    column-count: 2;
+    column-gap: 56px;
+}
+
+.footer__heading {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-grid__item {
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.2s;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.footer__timing {
+    margin-bottom: 8px;
+
+    &::before {
+        content: url('../assets/icons/wall-clock.svg');
+        vertical-align: middle;
+        margin-right: 8px;
+    }
+
+    span {
+        color: #4C858B;
+    }
+}
+
+.footer__location {
+    margin-bottom: 25px;
+    &::before {
+        content: url('../assets/icons/location.svg');
+        vertical-align: middle;
+        margin-right: 8px;
+    }
+}

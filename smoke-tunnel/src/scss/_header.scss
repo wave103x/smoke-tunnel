@@ -30,8 +30,9 @@ header {
     font-weight: bold;
     transition: 0.2s;
     cursor: pointer;
+
     &:hover {
-        color: darken($color-link, 15%);
+        color: darken($color-link, 25%);
     }
 }
 
@@ -43,6 +44,7 @@ header {
     background: center no-repeat;
     cursor: pointer;
     transition: 0.2s;
+
     &:hover {
         border-color: #aaa;
     }
@@ -56,12 +58,15 @@ header {
 .circle-btn_burger {
     background-image: url('../assets/icons/burger.svg');
 }
+
 .circle-btn_search {
     background-image: url('../assets/icons/loupe1.svg');
 }
+
 .circle-btn_favorites {
     background-image: url('../assets/icons/heart1.svg');
 }
+
 .circle-btn_bucket {
     background-image: url('../assets/icons/shopping-cart.svg');
 }
@@ -70,6 +75,9 @@ header {
     @extend.menu__link;
     font-weight: 400;
     color: #4C858B;
+    &:hover {
+        color: rgb(201, 201, 201);
+    }
         span {
             color: #000;
             font-weight: bold;
@@ -81,7 +89,8 @@ header {
     color: #AE2236;
     border-bottom: 1px dashed #AE2236;
     padding-bottom: 2px;
+
     &:hover {
-        color: darken(#AE2236, 20%);
+        color: lighten(#AE2236, 20%);
     }
 }

@@ -26,67 +26,131 @@ html(lang="ru")
                 button.circle-btn.circle-btn_search
                 button.circle-btn.circle-btn_favorites
                 button.circle-btn.circle-btn_bucket
-        h1 Монтаж дымоходов
-        ul
-            li Главная
-            li Монтаж дымоходов
-        section.section-first
-            p В Дымоход.ру  вам помогут как приобрести, так и установить дымоход любой конфигурации. В нашем монтажном отделе, состоящим из трёх бригад работают квалифицированные специалисты, которые ежегодно проходят курсы повышения квалификации. Все работы проводим качественно и аккуратно, в короткий срок и на совесть.
-            .first-section__desription
-                .first-section__desription_left
-                    h2 Lorem ipsum dolor sit amet <br>Lorem ipsum
-                    ul
-                        li Доступные цены
-                        li Собственное производсвто  Дымоходов
-                        li Выполнение необходимых работ, связанных с установкой камина, печи, котла
-                        li Гарантия (от трёх до десяти лет)
-                        li Работаем чисто, аккуратно, убираем за собой, не сквернословим
-                        li Только русские квалифицированные специалисты
-                        li Устанавливаем любые дымоходы всех производителей
-                .first-section__desription_img
-        section.section-process
-            h2 Процесс выполнения монтажа
-            .section-process__grid
-                .section-process__item Рассчёт предварительной заявки
-                .section-process__item Замер объекта нашим инженером
-                .section-process__item Составление Коммерческого предложения по изделиям дымохода и окончательной сметы на  работы
-                .section-process__item Изготовление Дымохода, покраска (если требуется)
-                .section-process__item Монтаж продукции, проверка и наладкапробный запуск системы и последующая эксплуатация
-                .section-process__item Гарантийное обслуживание по соответствующем сроку
-        section.section-why
-            p В отличие от других производителей, мы ручаемся за качество продукции, т.к. все Дымоходы изготавливаются из качественной стали, проверенного теплоизолятора, по современной технологии плазменной сварки «встык»
-            .section-why__theses
-                .section-why__item
-                    .why-item__img
-                    .why-item__heading Большой гарантийный срок
-                    .why-item__text Крепёж, стыковка элементов – 10 лет<br>Сквозная коррозия труб – 5 лет<br>Гидроизоляция – 3 года
-                .section-why__item
-                    .why-item__img
-                    .why-item__heading Помощь в покупке агрегата
-                    .why-item__text (печи, камина, котла), а также качественной установке на объекте с последующим гарантийным сервисом
-                .section-why__item
-                    .why-item__img
-                    .why-item__heading Реальные отзывы клиентов
-                    .why-item__text Убедитесь в добросовестности исполнения, прочитав Отзывы клиентов в специальном разделе.
-        h3 необходима консультация?
-        p.sub-heading оставьте заявку или свяжитесь с нами в социальных сетях
-        .socials.socials_page
-            a(href="#" class="socials__icon socials__icon_vk")
-            a(href="#" class="socials__icon socials__icon_tg")
-            a(href="#" class="socials__icon socials__icon_insta")
-            a(href="#" class="socials__icon socials__icon_wots")
-        section.consult
-            p Для консультации заполните форму!
-            p С Вами свяжутся в ближайшее время
-            form(class="form-consult" method="" action="#")
-                input(type="text" name="name" placeholder="Ваше имя")
-                input(type="tel" name="phone" placeholder="Ваш телефон")
-                button отправить
-        section.section-video
-            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            .section-video__video
-        section.section-photo
-            h3 Фото выполненных работ
-            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            .section-photo__grid
-                img(class="section-photo__img" src="")
+        .wrapper
+            h1 Монтаж дымоходов
+        .wrapper
+            ul.breadcrumbs
+                li: a.breadcrumbs__item.breadcrumbs__item_first(href="#") Главная
+                li: a.breadcrumbs__item(href="#") Монтаж дымоходов
+        .wrapper
+            section.section-first
+                p.font-body В Дымоход.ру  вам помогут как приобрести, так и установить дымоход любой конфигурации. В нашем монтажном отделе, состоящим из трёх бригад работают квалифицированные специалисты, которые ежегодно проходят курсы повышения квалификации. Все работы проводим качественно и аккуратно, в короткий срок и на совесть.
+                .first-section__desription
+                    .first-section__desription_left
+                        h2.h2_noline Lorem ipsum dolor sit amet <span class="h2-span">Lorem ipsum</span>
+                        ul.first-section__list
+                            li.first-section-list__item.font-body Доступные цены
+                            li.first-section-list__item.font-body Собственное производсвто  Дымоходов
+                            li.first-section-list__item.font-body Выполнение необходимых работ, связанных с установкой камина, печи, котла
+                            li.first-section-list__item.font-body Гарантия (от трёх до десяти лет)
+                            li.first-section-list__item.font-body Работаем чисто, аккуратно, убираем за собой, не сквернословим
+                            li.first-section-list__item.font-body Только русские квалифицированные специалисты
+                            li.first-section-list__item.font-body Устанавливаем любые дымоходы всех производителей
+                    .first-section__desription_img
+        .wrapper
+            section.section-process
+                h2 Процесс выполнения монтажа
+                .section-process__grid
+                    .section-process__item.font-body
+                        div.giga-first 1
+                        div Рассчёт предварительной заявки
+                    .section-process__item.font-body
+                        div.giga-first 2
+                        div Замер объекта нашим инженером
+                    .section-process__item.font-body
+                        div.giga-first 3
+                        div Составление Коммерческого предложения по изделиям дымохода и окончательной сметы на  работы
+                    .section-process__item.font-body
+                        div.giga-first 4
+                        div Изготовление Дымохода, покраска (если требуется)
+                    .section-process__item.font-body
+                        div.giga-first 5
+                        div Монтаж продукции, проверка и наладкапробный запуск системы и последующая эксплуатация
+                    .section-process__item.font-body
+                        div.giga-first 6
+                        div Гарантийное обслуживание по соответствующем сроку
+        .wrapper
+            section.section-why
+                h2 Почему Дымоход.ру?
+                p.font-body В отличие от других производителей, мы ручаемся за качество продукции, т.к. все Дымоходы изготавливаются из качественной стали, проверенного теплоизолятора, по современной технологии плазменной сварки «встык»
+                .section-why__theses
+                    .section-why__item
+                        .why-item__img.why1
+                        .why-item__heading Большой гарантийный срок
+                        .why-item__text.font-body Крепёж, стыковка элементов – 10 лет<br>Сквозная коррозия труб – 5 лет<br>Гидроизоляция – 3 года
+                    .section-why__item
+                        .why-item__img.why2
+                        .why-item__heading Помощь в покупке агрегата
+                        .why-item__text.font-body (печи, камина, котла), а также качественной установке на объекте с последующим гарантийным сервисом
+                    .section-why__item
+                        .why-item__img.why3
+                        .why-item__heading Реальные отзывы клиентов
+                        .why-item__text.font-body Убедитесь в добросовестности исполнения, прочитав Отзывы клиентов в специальном разделе.
+        .wrapper
+            section.section-consult
+                h3.h3_consult необходима консультация?
+                p.sub-heading оставьте заявку или свяжитесь с нами в социальных сетях
+                .socials.socials_page
+                    a(href="#" class="socials__icon socials__icon_vk")
+                    a(href="#" class="socials__icon socials__icon_tg")
+                    a(href="#" class="socials__icon socials__icon_insta")
+                    a(href="#" class="socials__icon socials__icon_wots")
+                .section-consult__form
+                    p Для <span>консультации</span> заполните форму!
+                    p.font-body С Вами свяжутся в ближайшее время
+                    form(class="form-consult" method="" action="#")
+                        input.input-text(type="text" name="name" placeholder="Ваше имя")
+                        input.input-text(type="tel" name="phone" placeholder="Ваш телефон")
+                        button.form-button отправить
+        .wrapper
+            section.section-video
+                h2 Видео об установке
+                p.font-body Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                .section-video__video
+                    <iframe class="video-youtube" width="771" height="438" src="https://www.youtube.com/embed/J4t4pMZBXZg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        .wrapper
+            section.section-photo
+                h2 Фото выполненных работ
+                p.font-body Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                .section-photo__grid
+                    .section-photo__item.photo1
+                    .section-photo__item.photo2
+                    .section-photo__item.photo3
+                    .section-photo__item.photo4
+                    .section-photo__item.photo5
+                    .section-photo__item.photo6
+                    .section-photo__item.photo7
+                    .section-photo__item.photo8
+        footer.footer
+            .wrapper.wrapper-footer
+                .footer__item
+                    .footer__heading КАТАЛОГ
+                    .footer__grid
+                        a.footer-grid__item(href='#') Дымоходы
+                        a.footer-grid__item(href='#') Дымососы
+                        a.footer-grid__item(href='#') Печи для дома
+                        a.footer-grid__item(href='#') Печи для бани
+                        a.footer-grid__item(href='#') Камины
+                        a.footer-grid__item(href='#') Силикат кальция
+                        a.footer-grid__item(href='#') Котлы
+                        a.footer-grid__item(href='#') Ещё
+                .footer__item
+                    .footer__heading ИНФОРМАЦИЯ
+                    .footer__grid
+                        a.footer-grid__item(href="#") Каталог
+                        a.footer-grid__item(href="#") Дымососы
+                        a.footer-grid__item(href="#") Печи для дома
+                        a.footer-grid__item(href="#") Печи для бани
+                        a.footer-grid__item(href="#") Камины
+                        a.footer-grid__item(href="#") Силикат кальция
+                        a.footer-grid__item(href="#") Котлы
+                        a.footer-grid__item(href="#") Ещё
+                .footer__item
+                    .footer__heading ВРЕМЯ РАБОТЫ
+                    .footer__timing <span>пн-пт</span> 9:00 – 20:00   <span>сб-вс</span> 10:00 – 18:00
+                    .footer__location г. Санкт - Петербург, ул. Тамбасова д.7
+                    .socials.socials_footer
+                        a(href="#" class="socials__icon socials__icon_vk")
+                        a(href="#" class="socials__icon socials__icon_tg")
+                        a(href="#" class="socials__icon socials__icon_insta")
+                        a(href="#" class="socials__icon socials__icon_wots")
