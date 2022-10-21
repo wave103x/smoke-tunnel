@@ -25,19 +25,23 @@ html(lang="ru")
             .buttons
                 button.circle-btn.circle-btn_search
                 button.circle-btn.circle-btn_favorites
-                button.circle-btn.circle-btn_bucket
+                .bucketDiv
+                    button.circle-btn.circle-btn_bucket
         .wrapper
             h1 Монтаж дымоходов
         .wrapper
             ul.breadcrumbs
                 li: a.breadcrumbs__item.breadcrumbs__item_first(href="#") Главная
-                li: a.breadcrumbs__item(href="#") Монтаж дымоходов
+                li: a.breadcrumbs__item.notmobile(href="#") Монтаж дымоходов
+                li: a.breadcrumbs__item.mobile(href="#") Каталог
+                li: a.breadcrumbs__item.mobile(href="#") Камины
+                li: a.breadcrumbs__item.breadcrumbs__item_last.mobile(href="#") Камины облицовки
         .wrapper
             section.section-first
                 p.font-body В Дымоход.ру  вам помогут как приобрести, так и установить дымоход любой конфигурации. В нашем монтажном отделе, состоящим из трёх бригад работают квалифицированные специалисты, которые ежегодно проходят курсы повышения квалификации. Все работы проводим качественно и аккуратно, в короткий срок и на совесть.
                 .first-section__desription
                     .first-section__desription_left
-                        h2.h2_noline Lorem ipsum dolor sit amet <span class="h2-span">Lorem ipsum</span>
+                        h2.h2_noline Lorem ipsum dolor sit amet <br><span class="h2-span">Lorem ipsum</span>
                         ul.first-section__list
                             li.first-section-list__item.font-body Доступные цены
                             li.first-section-list__item.font-body Собственное производсвто  Дымоходов
@@ -98,9 +102,9 @@ html(lang="ru")
                 .section-consult__form
                     p Для <span>консультации</span> заполните форму!
                     p.font-body С Вами свяжутся в ближайшее время
-                    form(class="form-consult" method="" action="#")
+                    form(class="form-consult")
                         input.input-text(type="text" name="name" placeholder="Ваше имя")
-                        input.input-text(type="tel" name="phone" placeholder="Ваш телефон")
+                        input.input-text(type="tel" name="phone" placeholder="Ваш телефон" pattern="^[0-9]*$")
                         button.form-button отправить
         .wrapper
             section.section-video
@@ -138,18 +142,22 @@ html(lang="ru")
                     .footer__heading ИНФОРМАЦИЯ
                     .footer__grid
                         a.footer-grid__item(href="#") Каталог
-                        a.footer-grid__item(href="#") Дымососы
-                        a.footer-grid__item(href="#") Печи для дома
-                        a.footer-grid__item(href="#") Печи для бани
-                        a.footer-grid__item(href="#") Камины
-                        a.footer-grid__item(href="#") Силикат кальция
-                        a.footer-grid__item(href="#") Котлы
-                        a.footer-grid__item(href="#") Ещё
-                .footer__item
+                        a.footer-grid__item(href="#") Установка и монтаж
+                        a.footer-grid__item(href="#") Отзывы
+                        a.footer-grid__item(href="#") Ликвидация товара
+                        a.footer-grid__item(href="#") Полезное
+                        a.footer-grid__item(href="#") Контакты
+                        a.footer-grid__item(href="#") Оплата и доставка
+                .footer__item.footer__item_timing
                     .footer__heading ВРЕМЯ РАБОТЫ
                     .footer__timing <span>пн-пт</span> 9:00 – 20:00   <span>сб-вс</span> 10:00 – 18:00
                     .footer__location г. Санкт - Петербург, ул. Тамбасова д.7
                     .socials.socials_footer
+                        a(href="#" class="socials__icon socials__icon_vk")
+                        a(href="#" class="socials__icon socials__icon_tg")
+                        a(href="#" class="socials__icon socials__icon_insta")
+                        a(href="#" class="socials__icon socials__icon_wots")
+                .socials.socials_footer.socials_tablet
                         a(href="#" class="socials__icon socials__icon_vk")
                         a(href="#" class="socials__icon socials__icon_tg")
                         a(href="#" class="socials__icon socials__icon_insta")

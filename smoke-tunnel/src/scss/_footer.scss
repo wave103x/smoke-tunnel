@@ -4,10 +4,19 @@
     color: white;
 }
 
+.footer__item {
+    flex-basis: 29%;
+    font-size: 14px;
+}
+
 .wrapper-footer {
     display: flex;
-    width: 100%;
+    // width: 100%;
     justify-content: space-between;
+}
+
+.footer__item_timing {
+    max-width: 309px;
 }
 
 .footer__grid {
@@ -54,4 +63,8 @@
         vertical-align: middle;
         margin-right: 8px;
     }
+}
+
+.socials_tablet {
+    display: none;
 }
