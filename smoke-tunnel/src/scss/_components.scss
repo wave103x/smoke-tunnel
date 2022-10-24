@@ -1,5 +1,8 @@
 .wrapper {
-    max-width: 1218px;
+    // max-width: 1208px;
+    max-width: 1240px;
+    padding: 0 16px;
+    box-sizing: border-box;
     margin: 0 auto;
 }
 
@@ -14,6 +17,7 @@
     width: 20px;
     height: 20px;
     transition: 0.2s;
+
     &:hover {
         filter: brightness(70%);
     }
@@ -26,12 +30,15 @@
 .socials__icon_vk {
     background-image: url('../assets/icons/vk.svg');
 }
+
 .socials__icon_tg {
     background-image: url('../assets/icons/telegram.svg');
 }
+
 .socials__icon_insta {
     background-image: url('../assets/icons/instagram.svg');
 }
+
 .socials__icon_wots {
     background-image: url('../assets/icons/whatsapp.svg');
 }
@@ -43,14 +50,16 @@
     padding-top: 33px;
     margin: 40px auto 0;
     box-sizing: border-box;
-        p:first-child {
-            font-size: 20px;
-            font-weight: 500;
-                span {
-                    font-weight: bold;
-                    color: #EA6628;
-                }
+
+    p:first-child {
+        font-size: 20px;
+        font-weight: 500;
+
+        span {
+            font-weight: bold;
+            color: #EA6628;
         }
+    }
 }
 
 .form-consult {
@@ -58,9 +67,10 @@
     gap: 16px;
     width: 100%;
     flex-basis: content;
-        * {
-            flex-grow: 1;
-        }
+
+    * {
+        flex-grow: 1;
+    }
 }
 
 
@@ -73,6 +83,7 @@
     &::placeholder {
         color: #b1b1b1;
     }
+
     &:invalid {
         color: #E33E54;
         border-color: #E33E54;
@@ -89,6 +100,7 @@
     transition: 0.2s;
     cursor: pointer;
     flex-grow: 4;
+
     &:hover {
         background-color: lighten(#215359, 10%);
     }
@@ -100,6 +112,7 @@
     .socials {
         display: none;
     }
+
     .wrapper {
         padding: 0 1rem;
     }
